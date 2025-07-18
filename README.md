@@ -1,8 +1,8 @@
-# 🚀 ShortlinkHQ - OpenSource Shortlink Project
+# 🚀 Shortlify - OpenSource Shortlink Project
 
 ## ✅ Project Overview
 
-### 🔹 Project Name: `ShortlinkHQ`
+### 🔹 Project Name: `Shortlify`
 An open-source, privacy-respecting, scalable shortlink platform inspired by Bitly but built with modern tech.
 
 ### 🔹 Objective
