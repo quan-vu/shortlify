@@ -1,4 +1,4 @@
-# 🚀 Shortlify - OpenSource Shortlink Project
+# Shortlify - OpenSource Shortlink Project
 
 ## ✅ Project Overview
 
@@ -49,28 +49,19 @@ Enable users to shorten URLs, track analytics, create branded links, and manage 
 
 #### 🔷 Architecture Overview
 
+![](shortlify-architecture.jpg)
 
 #### ⚙️ Modules Breakdown
 
-- Auth Module
+- Auth Module: JWT-based auth, OAuth2 support, RBAC
 
-  JWT-based auth, OAuth2 support, RBAC
+- Link Module: URL validation, alias generation, redirection handling
 
-- Link Module
+- Analytics Module: Background queue to log request data asynchronously
 
-  URL validation, alias generation, redirection handling
+- Admin Module: Dashboard for managing links and users
 
-- Analytics Module
-
-  Background queue to log request data asynchronously
-
-- Admin Module
-
-  Dashboard for managing links and users
-
-- Rate Limiter
-
-  Built-in NestJS guard or Redis-based limiter
+- Rate Limiter: Built-in NestJS guard or Redis-based limiter
 
 #### 🔗 Short URL Flow
 
@@ -83,7 +74,7 @@ Enable users to shorten URLs, track analytics, create branded links, and manage 
    - Fire background analytics log job
    - Redirect user
 
-### 4. Tech Stack
+## 4. Tech Stack
 
 ✅ Backend
 - Framework: NestJS
@@ -105,7 +96,7 @@ Enable users to shorten URLs, track analytics, create branded links, and manage 
 - GitHub Actions for CI/CD
 - Helm chart / K8s for cloud deployment
 
-### 📄 5. Database Schema (Simplified)
+## 📄 5. Database Schema (Simplified)
 
 ```sql
 users (
@@ -136,14 +127,14 @@ link_clicks (
 )
 ```
 
-### 🧪 6. Testing Strategy
+## 🧪 6. Testing Strategy
 
 - Unit tests (Jest) for all modules
 - Integration tests for link creation + redirection
 - Load testing (k6 or artillery)
 - E2E tests for frontend (Playwright)
 
-### 💡 7. Future Enhancements
+## 💡 7. Future Enhancements
 
 - 🔜 Link preview thumbnails
 - 🔜 Multi-tenant support
@@ -152,7 +143,7 @@ link_clicks (
 - 🔜 Mobile app or PWA
 - 🔜 Plugin support for analytics, spam detection
 
-### 📢 8. Community & Contribution
+## 📢 8. Community & Contribution
 
 - GitHub repository with contribution guide
 - Tagged good first issues
