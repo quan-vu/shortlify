@@ -8,8 +8,6 @@ An open-source, privacy-respecting, scalable shortlink platform inspired by Bitl
 ### 🔹 Objective
 Enable users to shorten URLs, track analytics, create branded links, and manage them via a dashboard or API.
 
----
-
 ## 📌 1. Project Definition
 
 | Item             | Description                                                           |
@@ -19,8 +17,6 @@ Enable users to shorten URLs, track analytics, create branded links, and manage 
 | Access Modes     | Web UI, RESTful API                                                   |
 | License          | MIT / Apache 2.0                                                      |
 | Deployment       | Docker / Kubernetes-ready, self-hosted or cloud deployment            |
-
----
 
 ## ⚠️ 2. Key Challenges
 
@@ -34,8 +30,6 @@ Enable users to shorten URLs, track analytics, create branded links, and manage 
 | Rate Limiting                | Prevent DoS via public APIs                               |
 | Multi-region Support         | Efficient global redirects                                |
 | User Authentication          | Secure link ownership and management                      |
-
----
 
 ## 🛠️ 3. Solution Design
 
@@ -51,8 +45,6 @@ Enable users to shorten URLs, track analytics, create branded links, and manage 
 - ✅ Spam/Abuse reporting
 - ✅ Redirect type (301, 302)
 
----
-
 ### 3.2 🧠 System Design
 
 #### 🔷 Architecture Overview
@@ -61,18 +53,23 @@ Enable users to shorten URLs, track analytics, create branded links, and manage 
 #### ⚙️ Modules Breakdown
 
 - Auth Module
+
   JWT-based auth, OAuth2 support, RBAC
 
 - Link Module
+
   URL validation, alias generation, redirection handling
 
 - Analytics Module
+
   Background queue to log request data asynchronously
 
 - Admin Module
+
   Dashboard for managing links and users
 
 - Rate Limiter
+
   Built-in NestJS guard or Redis-based limiter
 
 #### 🔗 Short URL Flow
@@ -148,12 +145,12 @@ link_clicks (
 
 ### 💡 7. Future Enhancements
 
-- [ ] Link preview thumbnails
-- [ ] Multi-tenant support
-- [ ] Public analytics sharing
-- [ ] Geo-targeted redirection
-- [ ] Mobile app or PWA
-- [ ] Plugin support for analytics, spam detection
+- 🔜 Link preview thumbnails
+- 🔜 Multi-tenant support
+- 🔜 Public analytics sharing
+- 🔜 Geo-targeted redirection
+- 🔜 Mobile app or PWA
+- 🔜 Plugin support for analytics, spam detection
 
 ### 📢 8. Community & Contribution
 
